@@ -54,8 +54,13 @@ const App = () => {
   return (
     <>
       <View>
-        <TouchableOpacity style={{ margin: 10 }} onPress={clicked}>
-          <Text style={{ color: "blue" }}>Open website</Text>
+        <TouchableOpacity
+          style={{ marginVertical: 50, marginLeft: 10 , fontSize : 30}}
+          onPress={clicked}
+        >
+          <Text style={{ color: "blue", textDecorationLine: "underline" }}>
+            Open Gmail
+          </Text>
         </TouchableOpacity>
       </View>
       {uri ? (
